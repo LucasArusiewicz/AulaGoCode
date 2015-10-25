@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Aula04_GoCode</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cadastrar">Cadastrar</string>
+    <string name="title_activity_listar">ListarActivity</string>
+    <string name="hintNome">Ex: Lucas</string>
+    <string name="hintTelefone">Ex:(51) 1122-3344</string>
+    <string name="hintIdade">Ex: 30</string>
+    <string name="estouAno">Estou estudando no:</string>
+    <string name="rad1">1º Ano</string>
+    <string name="rad2">2º Ano</string>
+    <string name="rad3">3º Ano</string>
+    <string name="corrida">Corrida</string>
+    <string name="caminhada">Caminhada</string>
+    <string name="atividades">Atividades</string>
+    <string-array name="arrayNomesCidades">
+        <item>Selecione sua Cidade...</item>
+        <item>Porto Alegre</item>
+        <item>Guaíba</item>
+        <item>Capão da Canoa</item>
+    </string-array>
+    <string name="title_activity_detalhes">DetalhesActivity</string>
+</resources>

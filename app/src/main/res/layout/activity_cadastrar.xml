@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#f8f8f8"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCadastrarNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agenda GoCode"
+                android:textSize="30dp"
+                style="@style/tema"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textSize="35dp"
+                style="@style/tema"/>
+
+            <EditText
+                android:id="@+id/etCadastrasNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintNome"
+                android:singleLine="true"
+                android:textSize="30dp"
+                android:inputType="textCapWords"
+                style="@style/tema"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textSize="35dp"
+                android:inputType="phone"
+                style="@style/tema"/>
+
+            <EditText
+                android:id="@+id/etCadastrastTelefone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintTelefone"
+                android:inputType="number"
+                android:textSize="30dp"
+                style="@style/tema"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Idade:"
+                android:textSize="35dp" style="@style/tema"/>
+
+            <EditText
+                android:id="@+id/etCadastrasIdade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintIdade"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="30dp"
+                style="@style/tema"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estouAno"
+                android:textSize="35dp" style="@style/tema"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbCadastrar1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rad1"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    style="@style/radio"
+                    />
+                <RadioButton
+                    android:id="@+id/rbCadastrar2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rad2"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    style="@style/radio"
+                    />
+                <RadioButton
+                    android:id="@+id/rbCadastrar3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rad3"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    style="@style/radio"
+                    />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spCadastrarCidade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/tema"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/atividades"
+                android:textSize="35dp" style="@style/tema"/>
+            <CheckBox
+                android:id="@+id/cbCadastrarCorrida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/corrida"
+                android:textSize="30dp"
+                style="@style/tema" />
+            <CheckBox
+                android:id="@+id/cbCadastrarCaminhada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/caminhada"
+                android:textSize="30dp"
+                style="@style/tema"/>
+
+            <Button
+                android:id="@+id/btnCadastrarCadastrar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                android:textSize="50dp"
+                style="@style/botao"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
