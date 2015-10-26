@@ -38,12 +38,7 @@ public class CadastrarActivity extends Activity {
 
         Bundle b = getIntent().getExtras();
 
-        if (b.getString("nome").isEmpty()) {
-            editar = false;
-        } else {
-            editar = true;
-            preencherFormulario(b.getString("nome"));
-        }
+
 
         btnCadastrar = (Button) findViewById(R.id.btnCadastrarCadastrar);
         etNome = (EditText) findViewById(R.id.etCadastrasNome);
@@ -56,6 +51,15 @@ public class CadastrarActivity extends Activity {
         cbCorrida = (CheckBox) findViewById(R.id.cbCadastrarCorrida);
         spCidade = (Spinner) findViewById(R.id.spCadastrarCidade);
         preencherSpinnerCidade();
+
+        if (b.getString("nome").isEmpty()) {
+            editar = false;
+        } else {
+            editar = true;
+            preencherFormulario(b.getString("nome"));
+        }
+
+
         btnCadastrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,8 +100,6 @@ public class CadastrarActivity extends Activity {
                 } else {
                     p.inserir(v.getContext());
                 }
-
-                p.inserir(v.getContext());
 
                 AlertDialog.Builder alerta = new AlertDialog.Builder(v.getContext());
                 alerta.setTitle("Pessoa Cadastrada");
